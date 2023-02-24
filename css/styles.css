@@ -11454,6 +11454,10 @@ html {
   width: 15rem;
 }
 
+.masthead-banana-icon{
+  width: 80px;
+}
+
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
