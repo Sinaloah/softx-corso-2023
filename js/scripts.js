@@ -57,3 +57,38 @@ window.addEventListener('DOMContentLoaded', event => {
 function myButton(){
     alert("This page is currently under maintenance");
   }
+
+
+let nameInput = document.body.querySelector('#name');
+let mailInput = document.body.querySelector('#email');
+let phoneInput = document.body.querySelector('#phone');
+let messageInput = document.body.querySelector('#name');
+let formButton = document.body.querySelector('#submitBtn');
+let errorMessage = document.body.querySelector('#submitErrorMessage');
+let successMessage = document.body.querySelector('#submitSuccessMessage');
+
+String.prototype.isNumber = function(){return /^\d+$/.test(this);}
+
+function nameValue(){
+    if(String(nameInput.value).length < 5){
+        alert("your name should be made of at least 5 characters");
+        errorMessage.classList.remove('d-none')
+        successMessage.classList.add('d-none')
+    } else if(String(phoneInput.value).isNumber() == false){
+        alert("The telephone number must be made of only numbers");
+        errorMessage.classList.remove('d-none')
+        successMessage.classList.add('d-none')
+    } else {
+        successMessage.classList.remove('d-none')
+        errorMessage.classList.add('d-none')
+    }
+  }
+
+formButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    nameValue()
+});
+
+
+
+
