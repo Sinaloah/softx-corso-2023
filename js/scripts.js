@@ -52,3 +52,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+function myButton() {
+    alert("This page is currently under maintenance");
+  }
+
