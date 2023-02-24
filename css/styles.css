@@ -4560,6 +4560,14 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 
+.my-button{
+  background-color: transparent;
+  border: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .card-link + .card-link {
   margin-left: 1rem;
 }
