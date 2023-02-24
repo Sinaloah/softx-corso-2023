@@ -69,7 +69,7 @@ let successMessage = document.body.querySelector('#submitSuccessMessage');
 
 String.prototype.isNumber = function(){return /^\d+$/.test(this);}
 
-function nameValue(){
+function inputValue(){
     if(String(nameInput.value).length < 5){
         alert("your name should be made of at least 5 characters");
         errorMessage.classList.remove('d-none')
@@ -86,7 +86,7 @@ function nameValue(){
 
 formButton.addEventListener('click', (e) => {
     e.preventDefault()
-    nameValue()
+    inputValue()
 });
 
 
